@@ -96,7 +96,7 @@ def main():
       else:
         print "Connected to folder " + imap_folder + " and downloading " + str(count) + " emails...\n"
         slurper.slurp() 
-      slurper.shutdown()
+        slurper.shutdown()
   else:
     print "Problem initializing imap connection."
 

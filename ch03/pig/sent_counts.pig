@@ -7,10 +7,10 @@ REGISTER $HOME/pig/contrib/piggybank/java/piggybank.jar
 
 DEFINE AvroStorage org.apache.pig.piggybank.storage.avro.AvroStorage();
 
-rmf /tmp/sent_counts.txt
+-- rmf /tmp/sent_counts.txt
 
 /* Load the emails in avro format (edit the path to match where you saved them) using the AvroStorage UDF from Piggybank */
-messages = LOAD '/me/Data/test_mbox' USING AvroStorage();
+messages = LOAD '/tmp/my_inbox_directory' USING AvroStorage();
 
 /* Filter nulls, they won't help */
 messages = FILTER messages BY (from IS NOT NULL) AND (tos IS NOT NULL);

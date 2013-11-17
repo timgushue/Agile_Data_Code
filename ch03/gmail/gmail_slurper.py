@@ -55,7 +55,7 @@ class GmailSlurper(object):
   
   def init_folder(self, folder):
     self.imap_folder = folder
-    status, count = self.imap.select(folder)      
+    status, count = self.imap.select(folder)
     print "Folder '" + str(folder) + "' SELECT status: " + status
     if(status == 'OK'):
       count = int(count[0])
@@ -120,6 +120,7 @@ class GmailSlurper(object):
     self.avro_writer.close()
     self.imap.close()
     self.imap.logout()
+    print "Process Completed!"
   
   def write(self, record):
     self.avro_writer.append(record)
