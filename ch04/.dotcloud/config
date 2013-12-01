@@ -1,6 +1,6 @@
 {
     "push_branch": null, 
     "application": "testola", 
-    "version": "0.9.4", 
+    "version": "0.9.7", 
     "push_protocol": "rsync"
 }
