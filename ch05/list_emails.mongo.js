@@ -1,4 +1,4 @@
-use agile_data;
+use tgushue;
 show collections;
 db.emails.findOne();
 db.emails.find();
@@ -14,7 +14,7 @@ db.emails.getIndexes();
 //    "key" : {
 //      "_id" : 1
 //    },
-//    "ns" : "agile_data.emails",
+//    "ns" : "tgushue.emails",
 //    "name" : "_id_"
 //  }
 // ]
@@ -26,7 +26,7 @@ db.emails.getIndexes();
 //    "key" : {
 //      "_id" : 1
 //    },
-//    "ns" : "agile_data.emails",
+//    "ns" : "tgushue.emails",
 //    "name" : "_id_"
 //  },
 //  {
@@ -34,7 +34,7 @@ db.emails.getIndexes();
 //    "key" : {
 //      "date" : 1
 //    },
-//    "ns" : "agile_data.emails",
+//    "ns" : "tgushue.emails",
 //    "name" : "date_1"
 //  }
 // ]
@@ -48,7 +48,7 @@ db.emails.getIndexes();
 //    "key" : {
 //      "_id" : 1
 //    },
-//    "ns" : "agile_data.emails",
+//    "ns" : "tgushue.emails",
 //    "name" : "_id_"
 //  },
 //  {
@@ -56,7 +56,7 @@ db.emails.getIndexes();
 //    "key" : {
 //      "date" : 1
 //    },
-//    "ns" : "agile_data.emails",
+//    "ns" : "tgushue.emails",
 //    "name" : "date_1"
 //  },
 //  {
@@ -64,7 +64,7 @@ db.emails.getIndexes();
 //    "key" : {
 //      "message_id" : 1
 //    },
-//    "ns" : "agile_data.emails",
+//    "ns" : "tgushue.emails",
 //    "name" : "message_id_1"
 //  }
 // ]

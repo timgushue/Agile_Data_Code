@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # Setup Mongo
 conn = pymongo.Connection() # defaults to localhost
-db = conn.agile_data
+db = conn.tgushue
 emails = db['emails']
 
 # Setup ElasticSearch

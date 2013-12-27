@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ## Store Emails in MongoDB ##
 
 ```
-pig -l /tmp -x local -param avros=<my_inbox_download_path> -param mongourl=mongodb://localhost/agile_data.emails -v -w avro_to_mongo.pig
+pig -l ~/Desktop/tmp -x local -v -w avro_to_mongo.pig
 ```
 
 ## Create the date and message_id indexes in MongoDB ##
@@ -41,7 +41,7 @@ python ./mongo_list.py
 
 ## Store Emails in ElasticSearch ##
 
-pig -l /tmp -x local -v -w ./elasticsearch.pig
+pig -l ~/Desktop/tmp -x local -v -w elasticsearch.pig
 
 ## Search Emails from Python ##
 

@@ -2,7 +2,7 @@ import pymongo
 
 # Setup Mongo
 conn = pymongo.Connection() # defaults to localhost
-db = conn.agile_data
+db = conn.tgushue
 emails = db['emails']
 
 email_list = emails.find()[0:20]
